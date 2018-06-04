@@ -26,7 +26,13 @@ Enemy.prototype.update = function(dt) {
     }
 
     //check if player runs into enemy
-    
+    if (player.x < this.x + 60 &&
+    player.x + 37 > this.x &&
+    player.y < this.y + 25 &&
+    30 + player.y > this.y) {
+        player.x =200;
+        player.y = 380;
+    }
 };
 
 // Draw the enemy on the screen, required method for game
@@ -42,6 +48,7 @@ Enemy.prototype.render = function() {
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
+var allEnemies = [];
 
 // Position enemies
 
