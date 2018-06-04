@@ -1,4 +1,3 @@
-var canvas = document.getElementById('canvas');
 
 // Enemies our player must avoid
 var Enemy = function(x, y, speed) {
@@ -6,7 +5,7 @@ var Enemy = function(x, y, speed) {
     // we've provided one for you to get started
     this.x = x;
     this.y = y;
-    this.speend = speed;
+    this.speed = speed;
 
     // The image/sprite for our enemies, this uses
     // a helper we've provided to easily load images
@@ -19,6 +18,15 @@ Enemy.prototype.update = function(dt) {
     // You should multiply any movement by the dt parameter
     // which will ensure the game runs at the same speed for
     // all computers.
+    this.x += this.speed * dt;
+    // Reset enemy
+    if (this.x > 550) {
+        this.x = -100;
+        this.speed = 100 + Math.floor(Math.random() * 512);
+    }
+
+    //check if player runs into enemy
+    
 };
 
 // Draw the enemy on the screen, required method for game
@@ -35,6 +43,9 @@ Enemy.prototype.render = function() {
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
 
+// Position enemies
+
+//Position player
 
 
 // This listens for key presses and sends the keys to your
