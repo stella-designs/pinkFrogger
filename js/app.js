@@ -66,6 +66,10 @@ Player.prototype.udate = function() {
         this.y = 380;
     } 
 };
+// Draw player on screen
+Player.prototype.handleInput = function() {
+    ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
+};
 
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
