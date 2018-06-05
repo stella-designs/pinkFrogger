@@ -50,6 +50,22 @@ var Player = function(x,y, speed){
     this.sprite = 'images/char-boy.png';
 };
 
+Player.prototype.udate = function() {
+    //Stops player from moving outside of canvas
+    if (this.y > 380) {
+        this.y = 380;
+    }
+
+    if (this.x > 400) {
+        this.x = 400;
+    }
+
+    //Check if player reaches top of canvas 
+    if (this.y < 0) {
+        this.x = 200;
+        this.y = 380;
+    } 
+};
 
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
