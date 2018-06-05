@@ -70,8 +70,9 @@ Player.prototype.update = function() {
         this.y = 380;
     } 
 };
+
 // Draw player on screen
-Player.prototype.handleInput = function() {
+Player.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
 
