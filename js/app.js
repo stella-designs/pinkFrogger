@@ -30,7 +30,7 @@ Enemy.prototype.update = function(dt) {
     player.x + 37 > this.x &&
     player.y < this.y + 25 &&
     30 + player.y > this.y) {
-        player.x =200;
+        player.x = 200;
         player.y = 380;
     }
 };
@@ -43,14 +43,14 @@ Enemy.prototype.render = function() {
 // Now write your own player class
 // This class requires an update(), render() and
 // a handleInput() method.
-var Player = function(x,y, speed){
+var Player = function(x, y, speed) {
     this.x = x;
     this.y = y;
     this.speed = speed;
     this.sprite = 'images/char-boy.png';
 };
 
-Player.prototype.udate = function() {
+Player.prototype.update = function() {
     //Stops player from moving outside of canvas
     if (this.y > 380) {
         this.y = 380;
@@ -58,6 +58,10 @@ Player.prototype.udate = function() {
 
     if (this.x > 400) {
         this.x = 400;
+    }
+
+    if (this.x < 0) {
+        this.x = 0;
     }
 
     //Check if player reaches top of canvas 
@@ -94,9 +98,16 @@ Player.prototype.handleInput = function(keyPress) {
 var allEnemies = [];
 
 // Position enemies
-
+var enemyPosition = [60, 140, 220];
 //Position player
+var player = new Player(200, 380, 50);
 
+var enemy;
+
+enemyPosition.forEach(function(posY){
+    enemy = new Enemy(0, posY, 100 + Math.floor(Math.random() * 512));
+    allEnemies.push(enemy)
+});
 
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
