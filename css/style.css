@@ -1,8 +1,14 @@
+
+html {
+    /* Background */
+    background-image: url('../images/pinkPaw.png'); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 body {
-    
-    background-image: url('images/pinkPaw.png');
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-attachment: fixed;
+
     text-align: center;
 }
