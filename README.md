@@ -9,17 +9,18 @@ Students use this [rubric](https://review.udacity.com/#!/projects/2696458597/rub
 For the detailed instructions check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
 "# classicArcadeGame" 
 
-Getting Started
-[//]: <> (TODO: Add game link)
+
+## Getting Started  
+
 Play Game:
 
-Game Driections
+## Game Driections
 1. The goal of the game is to get your player to the water without getting hit by a crossing enemy.
 2. Use keyboard arrow keys to move player up, down, left and right.
 3. If hit by enemy you will die and be moved back to the starting position.
 4. If you reach the water you win and get moved back to the starting position for another go.
 
-Resources
+## Resources
 
 [Udacity supporting courses](https://www.udacity.com/)  
 [MDN web docs](https://developer.mozilla.org/en-US/)  
