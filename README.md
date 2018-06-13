@@ -21,11 +21,11 @@ Game Driections
 
 Resources
 
-[Udacity supporting courses](https://www.udacity.com/)
-[MDN web docs](https://developer.mozilla.org/en-US/)
-[Stack overflow](https://stackoverflow.com/)
-[w3schools](https://www.w3schools.com/)
-[Theme Song ](https://instrumentalfx.co/download-pink-panther-theme-song/)
-[Background](https://wall.alphacoders.com/big.php?i=429927)
-[Panther Image](http://nostalgiacentral.com/television/tv-by-decade/tv-shows-1960s/pink-panther-show/)
-[Clouseau & Sgt. Deux-Deux](https://the-fox-after-dark.deviantart.com/art/The-Inspector-and-Sgt-Deux-Deux-656648302)
+[Udacity supporting courses](https://www.udacity.com/)  
+[MDN web docs](https://developer.mozilla.org/en-US/)  
+[Stack overflow](https://stackoverflow.com/)  
+[w3schools](https://www.w3schools.com/)  
+[Theme Song ](https://instrumentalfx.co/download-pink-panther-theme-song/)  
+[Background](https://wall.alphacoders.com/big.php?i=429927)  
+[Panther Image](http://nostalgiacentral.com/television/tv-by-decade/tv-shows-1960s/pink-panther-show/)  
+[Clouseau & Sgt. Deux-Deux](https://the-fox-after-dark.deviantart.com/art/The-Inspector-and-Sgt-Deux-Deux-656648302)  
