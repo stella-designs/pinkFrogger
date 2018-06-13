@@ -12,7 +12,7 @@ For the detailed instructions check out this [guide](https://docs.google.com/doc
 
 ## Getting Started  
 
-Play Game: https://websiteartist.github.classicArcadeGame
+Play Game: https://websiteartist.github.io/pinkFrogger
 
 ## Game Driections
 1. The goal of the game is to get your player to the water without getting hit by a crossing enemy.
