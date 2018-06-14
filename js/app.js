@@ -26,11 +26,15 @@ Enemy.prototype.update = function(dt) {
         this.speed = 100 + Math.floor(Math.random() * 512);
     }
 
+    this.collisionDetection()
+};
+
+Enemy.prototype.collisionDetection = function() {
     //check if player runs into enemy
     if (player.x < this.x + 60 &&
-    player.x + 37 > this.x &&
-    player.y < this.y + 25 &&
-    30 + player.y > this.y) {
+        player.x + 37 > this.x &&
+        player.y < this.y + 25 &&
+        30 + player.y > this.y) {
         player.x = 200;
         player.y = 380;
     }
