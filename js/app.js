@@ -57,23 +57,12 @@ var Player = function(x, y, speed) {
 
 Player.prototype.update = function() {
     //Stops player from moving outside of canvas
-    if (this.y > 380) {
-        this.y = 380;
-    }
-
-    if (this.x > 400) {
-        this.x = 400;
-    }
-
-    if (this.x < 0) {
-        this.x = 0;
-    }
+    this.y > 380 && (this.y = 380);
+    this.x > 400 && (this.x = 400);
+    this.x < 0 && (this.x = 0);
 
     //Check if player reaches top of canvas 
-    if (this.y < 0) {
-        this.x = 200;
-        this.y = 380;
-    } 
+    this.y < 0 && (this.x = 200, this.y = 380);
 };
 
 // Draw player on screen
